@@ -1,0 +1,31 @@
+{
+  "name": "mehab-be",
+  "version": "1.0.0",
+  "description": "username: mehab\r pass: mbIWB6B7g1ey8dhv",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node app.js",
+    "debug": "nodemon --inspect app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^6.3.12",
+    "aws-jwt-verify": "^4.0.1",
+    "aws-sdk": "^2.1672.0",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "helmet": "^7.1.0",
+    "hpp": "^0.2.3",
+    "mongoose": "^8.3.2",
+    "stripe": "^16.6.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

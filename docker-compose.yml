@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mehab-be:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      # - "443:3001"
+      - "3001:3001"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      # - /etc/ssl/cloudflare:/etc/ssl/cloudflare:ro
+    environment:
+      - NODE_ENV=development
+    command: node app.js
